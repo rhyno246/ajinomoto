@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "SVN-Gotham";
+  font-weight: 300;
+  src: url("../fonts/SVN-Gotham-Light.otf") format("woff2"),
+    url("../fonts/SVN-Gotham-Light.otf") format("woff"),
+    url("../fonts/SVN-Gotham-Light.otf") format("svg");
+}
+
+@font-face {
+  font-family: "SVN-Gotham";
+  font-weight: 500;
+  src: url("../fonts/SVN-Gotham-Regular.otf") format("woff2"),
+    url("../fonts/SVN-Gotham-Regular.otf") format("woff"),
+    url("../fonts/SVN-Gotham-Regular.otf") format("svg");
+}
+
+@font-face {
+  font-family: "SVN-Gotham";
+  font-weight: 700;
+  src: url("../fonts/SVN-Gotham-Bold.otf") format("woff2"),
+    url("../fonts/SVN-Gotham-Bold.otf") format("woff"),
+    url("../fonts/SVN-Gotham-Bold.otf") format("svg");
+}

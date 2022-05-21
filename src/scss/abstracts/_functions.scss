@@ -1,0 +1,77 @@
+.colums{ 
+    padding: var(--padding-col);
+    --width-default : 0;
+    --width: var(--width-mobile, var(--width-default)); 
+    flex-basis: calc(var(--width) / var(--column) * 100%);
+}
+@media (min-width: 768px) {
+    .colums {
+      --width: var(--width-tablet, var(--width-mobile, var(--width-default)));
+    }
+}
+
+@media (min-width : 1025px){
+    .colums{ 
+        --width: var(--width-desktop, var(--width-tablet, var(--width-mobile, var(--width-default))));
+    }
+}
+
+.colums-1{
+    --width-desktop : 1;
+    --width-tablet : 12;
+    --width-mobile : 12;
+}
+.colums-2{
+    --width-desktop : 2;
+    --width-tablet : 12;
+    --width-mobile : 12;
+}
+.colums-3{
+    --width-desktop : 3;
+    --width-tablet : 3;
+    --width-mobile : 12;
+}
+.colums-4{
+    --width-desktop : 4;
+    --width-tablet : 4;
+    --width-mobile : 12;
+}
+.colums-5{
+    --width-desktop : 5;
+    --width-mobile : 12;
+    --width-tablet : 5;
+}
+.colums-6{
+    --width-desktop : 6;
+    --width-tablet: 12;
+    --width-mobile : 12;
+}
+.colums-7{
+    --width-desktop : 7;
+    --width-mobile : 12;
+    --width-tablet : 7;
+}
+.colums-8{
+    --width-mobile : 12;
+    --width-tablet : 8;
+    --width-desktop : 8;
+}
+.colums-9{
+    --width-desktop : 9;
+    --width-tablet : 9;
+    --width-mobile : 12;
+}
+.colums-10{
+    --width-desktop : 10;
+    --width-tablet : 10;
+    --width-mobile : 12;
+}
+.colums-11{
+    --width : 11;
+}
+.colums-12{
+    --width : 12;
+}
+
+
+

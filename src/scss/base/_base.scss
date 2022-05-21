@@ -1,0 +1,84 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.4;
+  background: $bg;
+  color: $black;
+  font-family: "SVN-Gotham";
+}
+
+.img-res {
+  max-width: 100%;
+  height: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 0 100%;
+  margin: 0;
+}
+.parsley-errors-list {
+  li {
+    color: $bg;
+    font-size: 1.4rem;
+    @include green1366 {
+      font-size: 1rem !important;
+    }
+    @include green1600 {
+      font-size: 1.4rem;
+    }
+    @include tableMobile {
+      font-size: 1.2rem;
+    }
+  }
+}
+.overflow-scoll-table {
+  overflow: hidden !important;
+}
+
+.container {
+  width: 100%;
+  padding: 0 1rem;
+  margin-right: auto;
+  margin-left: auto;
+  @media (min-width: 576px) {
+    max-width: 54rem;
+  }
+  @media (min-width: 768px) {
+    max-width: 72rem;
+  }
+  @media (min-width: 992px) {
+    max-width: 96rem;
+  }
+  @media (min-width: 1200px) {
+    max-width: 119rem;
+  }
+  @media (min-width: 1600px) {
+    max-width: 140rem;
+  }
+}
+
+.container-fuild {
+  max-width: 128rem;
+  width: 100%;
+  padding: 0 1rem;
+  margin-right: auto;
+  margin-left: auto;
+  @include tableMobile {
+    padding: 0;
+  }
+  @include iphone5 {
+    padding: 0;
+  }
+}

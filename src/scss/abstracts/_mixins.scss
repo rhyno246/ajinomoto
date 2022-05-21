@@ -1,0 +1,137 @@
+@mixin iphone5 {
+    @media screen and (device-aspect-ratio: 40/71){
+        @content;
+    }
+}
+@mixin tableMobile {
+    @media screen and (max-width: 1024px){
+        @content;
+    }
+}
+@mixin Mobile {
+    @media (max-width : 767px){
+        @content;
+    }
+}
+@mixin landscapeTablet {
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+        @content;
+    }
+}
+
+@mixin portraitTablet {
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+        @content;
+    }
+}
+
+@mixin ipadproDoc {
+    @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2){
+        @content;
+    }
+}
+
+
+@mixin ipadpro {
+    @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+        @content;
+    }
+}
+@mixin  green1366 {
+    @media screen and (max-width: 1367px) and (min-width: 900px), (max-height: 601px){
+        @content;
+    }
+}
+
+@mixin desktopAndLapTop {
+    @media only screen  and (min-width : 1224px) {
+        @content;
+    }
+}
+
+@mixin LargeScreens {
+    @media only screen  and (min-width : 1824px) {
+        @content;
+    }
+}
+@mixin Android {
+    @media only screen 
+    and (device-width : 500px) and (min-height:840px)
+ {
+        @content;
+    }
+}
+
+@mixin iphoneX {
+    @media only screen 
+    and (device-width : 375px) and (max-height:700px) {
+        @content;
+    }
+}
+
+
+    
+
+
+@mixin green1600 {
+    @media screen and (max-width : 1600px){
+        @content;
+    }
+}
+
+@mixin flex($align : center , $wrap : wrap, $justify-content : flex-start, $dir : row) {
+    display: flex;
+    align-items: $align;
+    flex-wrap: $wrap;
+    justify-content: $justify-content;
+    flex-direction: $dir;
+}
+
+@mixin grid ($rows, $rowsfr, $column, $columnfr, $gap){
+    display: grid;
+    grid-template-rows: repeat($rows,$rowsfr);
+    grid-template-columns: repeat($column,$columnfr);
+    grid-gap: $gap;
+}
+
+
+@mixin position($pos,$y,$x) {
+    position: absolute;
+    @if $pos == 'topLeft' {
+        left: $x;
+        top: $y;
+    }@else if $pos == 'topRight' {
+        right: $x;
+        top: $y;
+    }@else if $pos == 'bottomLeft' {
+        left: $x;
+        bottom: $y;
+    }@else if $pos == 'bottomRight' {
+        right: $x;
+        bottom: $y;
+    }@else if $pos == 'center' {
+        transform: translate(50%,-50%);
+        right: $x;
+        top: $y;
+    }
+}
+
+@mixin boder-position($pos,$radius) {
+    border-radius: 0;
+    @if $pos == 'top' {
+      border-#{$pos}-left-radius: $radius;
+      border-#{$pos}-right-radius: $radius;
+    }@else if $pos == 'bottom' {
+      border-#{$pos}-left-radius: $radius;
+      border-#{$pos}-right-radius: $radius;
+    }@else if $pos == 'right' {
+      border-bottom-#{$pos}-radius: $radius;
+      border-top-#{$pos}-radius: $radius;
+    }@else if $pos == 'left' {
+      border-bottom-#{$pos}-radius: $radius;
+      border-top-#{$pos}-radius: $radius;
+    }
+}
+
+
+
